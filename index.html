@@ -5,9 +5,15 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1" />
 <style>
   body {
-    font-family: 'Andale Mono', 'Consolas', monospace;
+    -webkit-animation: colorchange 20s infinite;
+    animation: colorchange 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 100px 50px;
     text-align: center;
+    color: white;
   }
 
   li {
@@ -20,28 +26,46 @@
 
   a,
   a:visited {
-    color: green;
+    color: white;
   }
 
   a:hover {
-    background-color: green;
-    color: greenyellow;
+    color: blue;
   }
 
   .title {
     font-size: 24px;
     margin-bottom: 50px;
+    font-weight: normal;
   }
 
+  @keyframes colorchange
+  {
+    0%   {background-color: #156064;}
+    25%  {background-color: #00c49a;}
+    50%  {background-color: #f8e16c;}
+    75% {background-color: #ffc2b4;}
+    100% {background-color: #fb8f67;}
+  }
+
+  @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+  {
+    0%   {background-color: #156064;}
+    25%  {background-color: #00c49a;}
+    50%  {background-color: #f8e16c;}
+    75% {background-color: #ffc2b4;}
+    100% {background-color: #fb8f67;}
+  }
 
 </style>
 <title>generative art experiments</title>
 </head>
 <body>
-  <h1 class="title">caitlin's generative art experiments</h1>
+  <h1 class="title">☁️ caitlin's generative art experiments ☁️</h1>
   <p>click if u dare</p>
   <ul>
     <li><a href="./one/index.html">01. perlin chaos</a></li>
+    <li><a href="./two/index.html">02. perlin waves</a></li>
   </ul>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
 <script src="./script.js"></script>
