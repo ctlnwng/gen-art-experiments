@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1" />
+<link href="https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap" rel="stylesheet">
 <style>
   body {
     -webkit-animation: colorchange 20s infinite;
@@ -10,14 +11,19 @@
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
 
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Gentium Basic', 'Times New Roman', Times, serif;
     margin: 100px 50px;
-    text-align: center;
+    font-size: 32px;
+    /* text-align: center; */
     color: white;
   }
 
   li {
     list-style: none;
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 15px;
   }
 
   ul {
@@ -30,11 +36,11 @@
   }
 
   a:hover {
-    color: blue;
+    opacity: 0.6;
   }
 
   .title {
-    font-size: 24px;
+    font-size: 64px;
     margin-bottom: 50px;
     font-weight: normal;
   }
@@ -61,8 +67,8 @@
 <title>generative art experiments</title>
 </head>
 <body>
-  <h1 class="title">☁️ caitlin's generative art experiments ☁️</h1>
-  <p>click if u dare</p>
+  <h1 class="title">caitlin's generative art experiments</h1>
+  <p>(click if u dare ☺︎)</p>
   <ul>
     <li><a href="./one/index.html">01. perlin chaos</a></li>
     <li><a href="./two/index.html">02. perlin waves</a></li>
